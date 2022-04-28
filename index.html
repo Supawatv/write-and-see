@@ -1,79 +1,84 @@
 <!doctype html>
 <html class="no-js" lang="">
-
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-
-  <!-- Add your site or application content here -->
-  
-
-  <div id="mainContainer">
-
-    <div id="allText">
-      <h1 id="litTitle">Title of Your Great Literature</h1>
-
-      <div id="body">
-        <div id="line-1">
-
-          <p class="scansionMarks"> / </p>
-          <p class="IPA"> - </p>
-          <p class="myWriting">Do you ever feel like a plastic bag</p>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="theme-color" content="#fafafa">
+  </head>
+  <body>
+    <!-- Add your site or application content here -->
+    
+    <div id="mainContainer">
+      <div id="allText">
+        <h1 id="litTitle">Write and See</h1>
+        <div id="body">
 
 
+          <form id="myForm">
+            <label for="fname">Lines to be marked up:</label><br>
+            <input type="text" id="fname" name="fname" value="This is some poetry"><br>
+            </form>
+            <button id="submitButton">submit</button>
+          
+
+          <div id="line-1">
+            <p id="line-1-1">this is some copy</p>
+            <p id="line-1-2">this is some copy</p>
+            <p id="line-1-3">this is some copy</p>
+          </div>
+
+
+          <!-- Temporary disable to focus on backend -->
+
+<!--           <div id="line-1">
             <p class="scansionMarks"> / </p>
-          <p class="IPA"> - </p>
-          <p class="myWriting">Drifting through the wind, wanting to start again?</p>
-
-        </div>
-
-
+            <p class="IPA"> - </p>
+            <span class="myWriting">Do you ever feel like a plastic bag</span>
+          </div>
+          
+          
+          <div id="line-2">
+            <p class="scansionMarks"> / </p>
+            <p class="IPA"> - </p>
+            <span class="myWriting">Drifting through the wind, wanting to start again?</span>
+            <span id="cursor" class="blink_me">|</span>
+          </div>
+        </div> -->
+        
       </div>
       
-
-
     </div>
-
-
     
 
+    <!-- Javascripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 
-  </div>
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+
+    <script src="js/resources.js"></script>
+
+    <script src="js/main.js"></script>
 
 
 
-
-
-  
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 </html>
